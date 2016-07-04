@@ -10,9 +10,25 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="vendor/materialize-css/dist/css/materialize.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <app-root>Loading...</app-root>
+  <app-root>
+    <div class="container padding">
+      <div class="preloader-wrapper big active text-center">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </app-root>
 
   
 
@@ -25,7 +41,8 @@
       }).catch(console.error.bind(console));
     </script>
 
-  
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="vendor/materialize-css/dist/js/materialize.js"></script>
 
 </body>
 </html>
