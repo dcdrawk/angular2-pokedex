@@ -3,9 +3,9 @@
 </p>
 
 <ul *ngIf="pokemonList">
-<li *ngFor="let pokemon of pokemonList.results">
-  {{pokemon.name}}
-</li>
+  <li *ngFor="let pokemon of pokemonList.results">
+    {{pokemon.name}}
+  </li>
 </ul>
 
 <a class="waves-effect waves-teal btn" (click)="nextPage(pokemonList.next)">Next</a>

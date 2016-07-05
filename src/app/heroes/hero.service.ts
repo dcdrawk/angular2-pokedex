@@ -5,10 +5,8 @@ import { Hero } from './Hero';
 @Injectable()
 export class HeroService {
   getHeroes() {
-    // return HEROES;
-    // return Promise.resolve(HEROES);
     return new Promise<Hero[]>(resolve =>
-      setTimeout(() => resolve(HEROES), 100) // 100 miliseconds
+      setTimeout(() => resolve(HEROES), 0) // 0 milliseconds
     );
   }
 

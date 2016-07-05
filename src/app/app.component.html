@@ -3,16 +3,10 @@
     {{title}}
   </h1>
 </div>
-<!--<nav>
-  <a [routerLink]="['/heroes']">Heroes</a>
-  <a [routerLink]="['/dashboard']">Dashboard</a>
-</nav>-->
 <nav>
   <div class="nav-wrapper container">
     <a href="#" class="brand-logo right">Logo</a>
     <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <!--<li><a [routerLink]="['/heroes']">Heroes</a></li>
-      <li><a [routerLink]="['/dashboard']">Dashboard</a></li>-->
       <li *ngFor="let item of menu"><a [routerLink]="item.path">{{item.title}}</a></li>
     </ul>
   </div>

@@ -1,8 +1,9 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
-import { DashboardComponent } from './dashboard/';
-import { HeroDetailsComponent } from './hero-details/';
-import { PokemonComponent } from './pokemon/';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeroDetailsComponent } from './hero-details/hero-details.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
+
 const routes: RouterConfig = [
   
   {

@@ -1,7 +1,6 @@
 import { Component }       from '@angular/core';
 import { HeroService }     from './heroes/hero.service';
 import { PokemonService }     from './pokemon/pokemon.service';
-import { HeroesComponent } from './heroes/heroes.component';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
@@ -31,5 +30,5 @@ export class AppComponent {
       title: 'Pokemon',
       path: '/pokemon'
     }
-  ]
+  ];
 }
