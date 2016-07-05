@@ -6,7 +6,7 @@
 
  <div class="row pokemon-list" *ngIf="pokemonList">
   <div class="col s12 m3" *ngFor="let pokemon of pokemonList.results">
-    <div class="card-panel grey waves-effect pokemon-list-card">
+    <div class="card-panel grey darken-2 waves-effect pokemon-list-card" (click)="gotoDetail(pokemon)">
       <div class="pokemon-list-image">
         <img src="/images/pokemon/{{pokemon.id}}.png">
       </div>

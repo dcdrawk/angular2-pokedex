@@ -41,6 +41,7 @@ const barrels: string[] = [
   'app/heroes-component',
   'app/dashboard',
   'app/pokemon',
+  'app/pokemon-details',
   /** @cli-barrel */
 ];
 

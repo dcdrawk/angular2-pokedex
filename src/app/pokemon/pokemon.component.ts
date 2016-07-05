@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../pokemon/pokemon.service';
+import { Router } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -15,7 +16,8 @@ pokemonList: Object;
   //   result: any[];
   // };
   constructor(
-    private pokemonService: PokemonService
+    private pokemonService: PokemonService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -26,7 +28,6 @@ pokemonList: Object;
   }
 
   nextPage(url) {
-    console.log(url);
     this.pokemonService.getPokemonList(url).subscribe(Pokemon => {
       this.pokemonList = Pokemon;
     });
@@ -51,6 +52,11 @@ pokemonList: Object;
     });
     console.log(list);
     return list;
+  }
+
+  gotoDetail(pokemon: any) {
+    let link = ['/pokemon', pokemon.id];
+    this.router.navigate(link);
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component }       from '@angular/core';
 import { HeroService }     from './heroes/hero.service';
 import { PokemonService }     from './pokemon/pokemon.service';
+import { PokemonDetailsService } from './pokemon-details/pokemon-details.service'
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
@@ -11,7 +12,8 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   directives: [ROUTER_DIRECTIVES],
   providers: [
     HeroService,
-    PokemonService
+    PokemonService,
+    PokemonDetailsService
   ]
 })
 

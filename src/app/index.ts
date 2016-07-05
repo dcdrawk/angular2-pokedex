@@ -9,3 +9,6 @@ export * from './dashboard/';
 export * from './pokemon/';
 
 export * from './pokemon/pokemon.service';
+
+export * from './pokemon-details/';
+export * from './pokemon-details/pokemon-details.service';

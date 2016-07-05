@@ -3,9 +3,9 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
+import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
 
-const routes: RouterConfig = [
-  
+const routes: RouterConfig = [  
   {
     path: 'heroes',
     component: HeroesComponent
@@ -21,6 +21,10 @@ const routes: RouterConfig = [
   {
     path: 'pokemon',
     component: PokemonComponent
+  },
+  {
+    path: 'pokemon/:id',
+    component: PokemonDetailsComponent
   },
   {
     path: '',
