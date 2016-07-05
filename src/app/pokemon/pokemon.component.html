@@ -1,11 +1,21 @@
-<p>
-  pokemon works!
-</p>
-
-<ul *ngIf="pokemonList">
+<!--<ul *ngIf="pokemonList">
   <li *ngFor="let pokemon of pokemonList.results">
     {{pokemon.name}}
   </li>
-</ul>
+</ul>-->
 
-<a class="waves-effect waves-teal btn" (click)="nextPage(pokemonList.next)">Next</a>
+ <div class="row pokemon-list" *ngIf="pokemonList">
+  <div class="col s12 m3" *ngFor="let pokemon of pokemonList.results">
+    <div class="card-panel grey waves-effect pokemon-list-card">
+      <div class="pokemon-list-image">
+        <img src="/images/pokemon/{{pokemon.id}}.png">
+      </div>
+      <span class="white-text pokemon-list-text">
+        <span class="pokemon-list-number">#{{pokemon.number}}</span>
+        <span class="pokemon-list-name">{{pokemon.name}}</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!--<a class="waves-effect waves-teal btn" (click)="nextPage(pokemonList.next)">Next</a>-->

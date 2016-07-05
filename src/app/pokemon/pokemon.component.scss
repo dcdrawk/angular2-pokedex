@@ -1,0 +1,32 @@
+.pokemon-list {
+  .pokemon-list-card {
+    width: 100%;
+  }
+  .pokemon-list-image {
+    text-align: center;
+    max-height: 96px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .pokemon-list-text {
+    text-align: center;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.54);
+    z-index: 1;
+    position: relative;
+
+    span {
+      flex: 50;
+    }
+    .pokemon-list-number {      
+      text-align: left;
+    }
+    .pokemon-list-name {      
+      text-align: right;
+    }
+  }
+}
