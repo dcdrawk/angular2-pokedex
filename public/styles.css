@@ -158,3 +158,6 @@ nav a.active {
 .spinner-layer {
   margin: auto;
 }
+body {
+  background-color: #afafaf;
+}
