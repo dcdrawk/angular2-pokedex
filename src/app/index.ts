@@ -1,3 +1,4 @@
+
 export * from './environment';
 export * from './app.component';
 export * from './hero-details';
@@ -12,3 +13,5 @@ export * from './pokemon/pokemon.service';
 
 export * from './pokemon-details/';
 export * from './pokemon-details/pokemon-details.service';
+
+export * from './core/loading-spinner/';

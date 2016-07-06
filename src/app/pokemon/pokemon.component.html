@@ -1,11 +1,8 @@
-<!--<ul *ngIf="pokemonList">
-  <li *ngFor="let pokemon of pokemonList.results">
-    {{pokemon.name}}
-  </li>
-</ul>-->
 
- <div class="row pokemon-list" *ngIf="pokemonList">
-  <div class="col s12 m3" *ngFor="let pokemon of pokemonList.results">
+<loading-spinner *ngIf="!pokemonList"></loading-spinner>
+
+<div class="row pokemon-list" *ngIf="pokemonList">
+  <div class="col s6 m3" *ngFor="let pokemon of pokemonList.results">
     <div class="card-panel grey darken-2 waves-effect pokemon-list-card" (click)="gotoDetail(pokemon)">
       <div class="pokemon-list-image">
         <img src="/images/pokemon/{{pokemon.id}}.png">
@@ -17,5 +14,3 @@
     </div>
   </div>
 </div>
-
-<!--<a class="waves-effect waves-teal btn" (click)="nextPage(pokemonList.next)">Next</a>-->

@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../pokemon/pokemon.service';
 import { Router } from '@angular/router';
+import { LoadingSpinnerComponent } from '../core/loading-spinner/loading-spinner.component';
 
 @Component({
   moduleId: module.id,
   selector: 'app-pokemon',
   templateUrl: 'pokemon.component.html',
-  styleUrls: ['pokemon.component.css']
+  styleUrls: ['pokemon.component.css'],
+  directives: [
+    LoadingSpinnerComponent
+  ]
 })
 
 export class PokemonComponent implements OnInit {

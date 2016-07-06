@@ -1,0 +1,140 @@
+$bug: #A8B820;
+$dark: #705848;
+$electric: #F8D030;
+$fairy: #EE99AC;
+$fighting: #C03028;
+$fire: #F08030;
+$flying: #A890F0;
+$ghost: #705898;
+$grass: #78C850;
+$ground: #E0C068;
+$ice: #98D8D8;
+$normal: #A8A878;
+$poison: #A040A0;
+$rock: #B8A038;
+$steel: #B8B8D0;
+$water: #6890F0;
+
+$hp: #f44336;
+$attack: #FF9800;
+$defense: #FFC107;
+$special-attack: #2196f3;
+$special-defense: #8bc34a;
+$speed: #e91e63;
+
+h2 {
+  text-transform: capitalize;
+}
+.pokemon-type {
+  color: #fff;
+  font-weight: 600;
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  margin-right: .5em;
+  width: 80px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.pokemon-sprite{
+  height: 180px;
+  margin: auto;
+  display: block;
+}
+.pokemon-stat-number {
+  float: right;
+}
+.pokemon-stat-bar {
+  height: 52px;
+  // width: 100%;
+}
+
+.bug {
+  background-color: $bug;
+}
+
+.dark {
+  background-color: $dark;
+}
+
+.electric {
+  background-color: $electric;
+}
+
+.fairy {
+  background-color: $fairy;
+}
+
+.fighting {
+  background-color: $fighting;
+}
+
+.fire {
+  background-color: $fire;
+}
+
+.flying {
+  background-color: $flying;
+}
+
+.ghost {
+  background-color: $ghost;
+}
+
+.grass {
+  background-color: $grass;
+}
+
+.ground {
+  background-color: $ground;
+}
+
+.ice {
+  background-color: $ice;
+}
+
+.normal {
+  background-color: $normal;
+}
+
+.poison {
+  background-color: $poison;
+}
+
+.rock {
+  background-color: $rock;
+}
+
+.steel {
+  background-color: $steel;
+}
+
+.water {
+  background-color: $water;
+}
+
+.hp {
+  background-color: $hp;
+}
+
+.attack {
+  background-color: $attack;
+}
+
+.defense {
+  background-color: $defense;
+}
+
+.special-attack {
+  background-color: $special-attack;
+}
+
+.special-defense {
+  background-color: $special-defense;
+}
+
+.speed {
+  background-color: $speed;
+}

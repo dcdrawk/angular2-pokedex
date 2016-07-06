@@ -19,14 +19,16 @@
     z-index: 1;
     position: relative;
 
-    span {
-      flex: 50;
-    }
+    // span {
+    //   flex: 50;
+    // }
     .pokemon-list-number {      
       text-align: left;
+      flex: 25;
     }
     .pokemon-list-name {      
       text-align: right;
+      flex: 75;
     }
   }
 }

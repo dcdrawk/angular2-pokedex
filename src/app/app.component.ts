@@ -3,13 +3,17 @@ import { HeroService }     from './heroes/hero.service';
 import { PokemonService }     from './pokemon/pokemon.service';
 import { PokemonDetailsService } from './pokemon-details/pokemon-details.service'
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { LoadingSpinnerComponent } from './core/loading-spinner/loading-spinner.component';
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
+  directives: [
+    ROUTER_DIRECTIVES,
+    LoadingSpinnerComponent
+    ],
   providers: [
     HeroService,
     PokemonService,

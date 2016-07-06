@@ -1,6 +1,60 @@
-<div *ngIf="pokemonDetails">
-  <h1>{{pokemonDetails.name}}</h1>
-</div>
-<p>
-  pokemon-details works!
-</p>
+<loading-spinner *ngIf="!pokemon"></loading-spinner>
+<section *ngIf="pokemon">
+
+  <!--Pokemon Number / Name-->
+  <h3>#{{pokemon.number}} {{pokemon.name | capitalize}}</h3>
+
+  <!--Basic Pokemon Information-->
+  <div class="row card-panel">
+    <div class="col s12 m6 l8">
+      <h4>Basic Details</h4>
+      <div class="row">
+
+        <!--Type-->
+        <div class="col l4">
+          <h5>Type</h5>
+          <span class="pokemon-type {{item.type.name}}" *ngFor="let item of pokemon.types">{{item.type.name}}</span>
+        </div>
+
+        <!--Height-->
+        <div class="col l4">
+          <h5>Height</h5>
+          <p>{{pokemon.height}}</p>
+        </div>
+
+        <!--Weight-->
+        <div class="col l4">
+          <h5>Weight</h5>
+          <p>{{pokemon.weight}}</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Pokemon Sprite-->
+    <div class="col s12 m6 l4">
+      <img class="pokemon-sprite" src="/images/pokemon/{{pokemon.id}}.png">
+    </div>
+  </div>
+
+  <div class="card-panel row">
+    <div class="col l12">
+      <h4>Stats</h4>
+      <div class="row" *ngFor="let item of pokemon.stats">
+        <!--Stat Name-->
+        <div class="col l3">
+          <p>
+            {{item.stat.name | capitalize}}
+            <span class="pokemon-stat-number">
+              {{item.base_stat}}
+            </span>
+          </p>
+        </div>
+        <!--Stat Bar-->
+        <div class="col l9">
+          <div class="pokemon-stat-bar {{item.stat.name}}" [ngStyle]="{'width': item.width}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

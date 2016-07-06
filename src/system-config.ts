@@ -42,6 +42,7 @@ const barrels: string[] = [
   'app/dashboard',
   'app/pokemon',
   'app/pokemon-details',
+  'app/core/loading-spinner',
   /** @cli-barrel */
 ];
 

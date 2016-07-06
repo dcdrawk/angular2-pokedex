@@ -14,7 +14,7 @@ export class PokemonDetailsService {
    constructor(private http: Http) { }
 
    getPokemonDetails (id?: string): Observable<any[]> {
-     let url = 'http://pokeapi.co/api/v2/pokemon/' + id;
+     let url = 'http://pokeapi.co/api/v2/pokemon/' + id + '/';
     this._data = this.http.get(url)
                           .map(this.extractData)
                           .publishReplay(1)

@@ -1,11 +1,6 @@
-<!--<div class="padding">
-  <h1 class="container text-center">
-    {{title}}
-  </h1>
-</div>-->
+
 <nav class=" red">
   <div class="nav-wrapper container">
-    <!--<a href="#" class="brand-logo right">Logo</a>-->
     <ul id="nav-mobile" class="left hide-on-med-and-down">
       <li *ngFor="let item of menu"><a [routerLink]="item.path">{{item.title}}</a></li>
     </ul>
